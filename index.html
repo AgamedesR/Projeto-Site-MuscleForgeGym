@@ -6,69 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Landing page do Muscle Forge Gym, com informações sobre planos e serviços oferecidos.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Landing Page Muscle Forge Gym</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Muscle Forge Gym</title>
 </head>
 
-<body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1><img src="logo2_teste8_gym_branco.png" alt="Muscle Forge Gym" width="250"></h1>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
-                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
-                </ul>
-                <h1></h1>
-            </div>
-            <div class="login-button">
-                <button><a href="register.html">Cadastre-se</a></button>
-            </div>
+<body class="home-page">
 
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
+<header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <h1>
+                <img src="assets/images/logo2_teste8_gym_branco.png"
+                     alt="Muscle Forge Gym"
+                     width="250">
+            </h1>
+        </div>
+
+        <div class="nav-list">
             <ul>
                 <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
-                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="pages/planos.html" class="nav-link">Planos</a></li>
+                <li class="nav-item"><a href="pages/sobre.html" class="nav-link">Sobre</a></li>
             </ul>
-
-            <div class="login-button">
-                <button><a href="register.html">Cadastre-se</a></button>
-            </div>
         </div>
-    </header>
-    <!--Fim do Cabeçalho-->
 
-        <main id="content">
-            <section id="home">
-                <div class="image-container">
-                    <!-- img src="Design sem nome (2).png" alt="imagem da academia" height="100%" width="100%" -->
-                <h1 class="page-title">
-                        <strong> BEM VINDOS AO CENTRO DE TREINAMENTO <span>MUSCLE FORGE GYM</span></strong>
-                </h1>
+        <div class="login-button">
+            <button type="button" onclick="window.location.href='pages/register.html'">
+                Cadastre-se
+            </button>
+        </div>
 
-                <p class="description">
-                         <strong>A academia com o plano mais completo para você!</strong>
-                </p> 
-                    <div class="cta-buttons">           
-                        <a href="planos.html" class="btn-default">
-                            Ver planos disponíveis
-                        </a>
-                        <a href="tel:+558312345678" id="phone_button" class="btn-phone">
-                            <i class="fa-solid fa-phone"></i>
-                                (83) 91234-5678
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
-    <script src="script.js"></script>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()">
+                <img class="icon"
+                     src="assets/images/menu_white_36dp.svg"
+                     alt="Menu">
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="pages/planos.html" class="nav-link">Planos</a></li>
+            <li class="nav-item"><a href="pages/sobre.html" class="nav-link">Sobre</a></li>
+        </ul>
+
+        <div class="login-button">
+            <button type="button" onclick="window.location.href='pages/register.html'">
+                Cadastre-se
+            </button>
+        </div>
+    </div>
+</header>
+<!-- Fim do Cabeçalho -->
+
+<main id="content">
+    <section id="home">
+        <div class="image-container">
+
+            <img src="assets/images/Fundo-Index.png"
+                 alt="Imagem de fundo Muscle Forge Gym"
+                 width="100%"
+                 height="100%">
+
+            <h1 class="page-title">
+                <strong>
+                    BEM VINDOS AO CENTRO DE TREINAMENTO
+                    <span>MUSCLE FORGE GYM</span>
+                </strong>
+            </h1>
+
+            <p class="description">
+                <strong>A academia com o plano mais completo para você!</strong>
+            </p>
+
+            <div class="cta-buttons">
+                <a href="pages/planos.html" class="btn-default">
+                    Ver planos disponíveis
+                </a>
+
+                <a href="tel:+5583912345678" id="phone_button" class="btn-phone">
+                    (83) 91234-5678
+                </a>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<!-- JS -->
+<script src="assets/js/script.js"></script>
+
 </body>
 </html>
